@@ -1,13 +1,14 @@
 name: githubaction
 on: 
-   Branches: 
-            -main 
+   push:
+       Branches: 
+         -main 
 
 jobs:
     jobs-demo: 
         runs-on: ubnutu-latest
 
-        stpes:
+        steps:
            - name: checkout code 
              uses: actions/checkout@v2
 
