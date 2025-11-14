@@ -1,7 +1,7 @@
 name: githubaction
 on: 
    Branches: 
-        -main 
+            -main 
 
 jobs:
     jobs-demo: 
