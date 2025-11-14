@@ -6,13 +6,33 @@ on:
       - main
 
 jobs:
-  jobs-demo:
+  jobs-extract:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Print message
-        run: echo "welcome to my world"
+      - name: run e.py
+        run: python e.py
+
+  jobs-transfrom:
+     runs-on: ubuntu-latest
+
+     steps:
+       - name: checkout code 
+         uses: actions/checkout@v4
+
+       - name: run t.py
+         run: python t.py 
+
+  jobs-load:
+     runs-on: ubuntu-latest
+
+     steps:
+       - name: checkout code 
+         uses: actions/checkout@v4
+
+       - name: run l.py
+         run: python l.py                
  
